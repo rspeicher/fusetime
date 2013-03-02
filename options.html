@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title>FuseTimer Options</title>
+    <style>
+      html {
+        font-size: 100%;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+        background-color: #ffffff;
+      }
+      a {
+        color: #0088cc;
+        text-decoration: none;
+      }
+      a:hover,
+      a:focus {
+        color: #005580;
+        text-decoration: underline;
+      }
+      p {
+        margin: 0 0 10px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 10px 0;
+        font-family: inherit;
+        font-weight: bold;
+        line-height: 20px;
+        color: inherit;
+        text-rendering: optimizelegibility;
+      }
+      h1,
+      h2,
+      h3 {
+        line-height: 40px;
+      }
+      h1 {
+        font-size: 38.5px;
+      }
+      h2 {
+        font-size: 31.5px;
+      }
+      h3 {
+        font-size: 24.5px;
+      }
+      h4 {
+        font-size: 17.5px;
+      }
+      h5 {
+        font-size: 14px;
+      }
+      h6 {
+        font-size: 11.9px;
+      }
+      hr {
+        margin: 20px 0;
+        border: 0;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #ffffff;
+      }
+      form {
+        margin: 0 0 20px;
+      }
+      fieldset {
+        padding: 0;
+        margin: 0;
+        border: 0;
+      }
+      legend {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 40px;
+        color: #333333;
+        border: 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      label,
+      input,
+      button,
+      select,
+      textarea {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 20px;
+      }
+      input,
+      button,
+      select,
+      textarea {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      span.hint {
+        font-size: 85%;
+        display: block;
+      }
+      span.hint a {
+        color: #999;
+      }
+      #status {
+        color: #468847;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="dialog">
+      <fieldset>
+        <legend>FuseTimer Options</legend>
+
+        <label for="api_key">API key:</label>
+        <input type="text" id="api_key" name="api_key" size="60" autofocus="true" />
+        <span class="hint"><a href="http://www.giantbomb.com/api/">Don't know your API key? Find it here.</a></span>
+
+        <br>
+        <div id="status"></div>
+        <button id="save">Save</button>
+      </fieldset>
+    </div>
+  </body>
+
+  <script src="options.js"></script>
+
+</html>

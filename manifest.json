@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name":         "FuseTime",
+  "description":  "Lets duders know the length of GiantBomb videos without playing them.",
+  "version":      "1.0",
+
+  "icons": {
+    "128": "icon-128.png"
+  },
+
+  "background": {
+    "scripts":    ["background.js"],
+    "persistent": false
+  },
+
+  "options_page": "options.html",
+
+  "permissions": [
+    "http://www.giantbomb.com/",
+    "https://www.giantbomb.com/"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.giantbomb.com/*", "http://www.giantbomb.com/*"],
+      "js":      ["jquery.js", "moment.js", "fusetime.js"],
+      "run_at":  "document_end"
+    }
+  ]
+}
